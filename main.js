@@ -209,3 +209,9 @@ window.addEventListener("scroll",function(event){
     header.classList.remove("active")
    }
 })
+
+
+function openFavorite()
+{
+    window.location.replace("favorite.html")
+}
