@@ -135,7 +135,7 @@ let imageId = ""
  function addToFav(self)
 {
     imageId = self.dataset.id
-    
+
     auth.onAuthStateChanged((user) => {
         if (user) {
              uid = auth.currentUser.uid;
@@ -145,7 +145,8 @@ let imageId = ""
            favoriteFun(uid,imageId)
 
         } else {
-            alert("create an account to start saving images")
+            alert("create an account to start saving images");
+            document.querySelector(".form_wrapper").style.display = "block"
         }
     })
 
